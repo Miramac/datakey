@@ -1,0 +1,21 @@
+{
+  "name": "datakey",
+  "version": "0.0.1",
+  "description": "Provides auto generating keys from objects",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./test/mocha.datakey.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Miramac/datakey.git"
+  },
+  "keywords": [
+    "key"
+  ],
+  "author": "Fabian Roloff <fabian.rololff@vocatus.de>",
+  "license": "ISC"
+}
