@@ -14,7 +14,8 @@
     "url": "https://github.com/Miramac/datakey.git"
   },
   "keywords": [
-    "key"
+    "key",
+	"level db"
   ],
   "author": "Fabian Roloff <fabian.rololff@vocatus.de>",
   "license": "ISC"
