@@ -43,6 +43,13 @@ describe('datakey', function(){
 			assert.equal(datakey.levelup(testData, keys)[2].value.name, 'AC');
 			done();
 		});
+		it('should process only one', function(done){
+			var datakey = new Datakey();
+			var keys = ['ID', 'name']
+			var testData = { ID: 1, name: 'AA', result: 56 };
+			assert.equal(datakey.levelup(testData, keys).length, 1);
+			done();
+		});
 	});
 });
 
