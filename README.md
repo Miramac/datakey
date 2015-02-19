@@ -6,8 +6,8 @@ Provides auto generating keys from objects. Uses '\x00' (null) as default divide
 ````javascript
 	var Datakey = new require('datakey');
   
-	var datakey1 = new Datakey();
-	var keys = ['ID', 'name'],
+	var datakey1 = new Datakey(),
+	keys = ['ID', 'name'],
 	testData = { ID: 1, name: 'AA', result: 1000 },
 	key;
 	
@@ -23,8 +23,8 @@ converts data into a levelup batch transaction object
 ````javascript
 	var Datakey = new require('datakey');
   
-	var datakey = new Datakey();
-	var keys = ['ID', 'name'],
+	var datakey = new Datakey(),
+	keys = ['ID', 'name'],
 	testData = [{ ID: 1, name: 'AA', result: 56 },{ ID: 1, name: 'AB', result: 67 }],
 	key;
 	
