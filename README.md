@@ -1,24 +1,29 @@
 # datakey
-Provides auto generating keys from objects. Uses "\x00" as default divider.
+Provides auto generating keys from objects. Uses '\x00' (null) as default divider.
 
 ## get
 
 ````javascript
-  var datakey = require('datakey');
+  var Datakey = new require('datakey');
   
+  var datakey1 = new Datakey();
   var keys = ['ID', 'name'],
 	testData = { ID: 1, name: 'AA', result: 1000 },
 	key;
 	
 	datakey.get(testData, keys); // retruns: '1\x00AA'
+
+  var datakey2 = new Datakey({divider: '!'});
+	datakey.get(testData, keys); // retruns: '1!AA'
 	
 ````
 
 ## levelup
 converts data into a levelup batch transaction object
 ````javascript
-  var datakey = require('datakey');
+  var Datakey = new require('datakey');
   
+  var datakey = new Datakey();
   var keys = ['ID', 'name'],
 	testData = [{ ID: 1, name: 'AA', result: 56 },{ ID: 1, name: 'AB', result: 67 }],
 	key;
