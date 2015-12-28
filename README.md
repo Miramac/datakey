@@ -4,7 +4,7 @@ Provides auto generating keys from objects. Uses '\x00' (null) as default divide
 ## .get(data, keys)
 
 ````javascript
-	var Datakey = new require('datakey');
+	var Datakey = require('datakey');
   
 	var datakey1 = new Datakey(),
 	keys = ['ID', 'name'],
@@ -21,7 +21,7 @@ Provides auto generating keys from objects. Uses '\x00' (null) as default divide
 ## .levelup(data, keys)
 converts data into a levelup batch transaction object
 ````javascript
-	var Datakey = new require('datakey');
+	var Datakey = require('datakey');
   
 	var datakey = new Datakey(),
 	keys = ['ID', 'name'],
