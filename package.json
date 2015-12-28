@@ -1,6 +1,6 @@
 {
   "name": "datakey",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "Provides auto generating keys from objects",
   "main": "index.js",
   "directories": {
