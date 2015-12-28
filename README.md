@@ -11,10 +11,10 @@ Provides auto generating keys from objects. Uses '\x00' (null) as default divide
 	testData = { ID: 1, name: 'AA', result: 1000 },
 	key;
 	
-	datakey.get(testData, keys); // retruns: '1\x00AA'
+	datakey1.get(testData, keys); // retruns: '1\x00AA'
 
 	var datakey2 = new Datakey({divider: '!'});
-	datakey.get(testData, keys); // retruns: '1!AA'
+	datakey2.get(testData, keys); // retruns: '1!AA'
 	
 ````
 
